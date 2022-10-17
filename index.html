@@ -1,89 +1,141 @@
-<!--Photo by <a href="https://unsplash.com/@veeterzy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">veeterzy</a> on <a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
-        <title>leticia-cs | Home</title>
-        <meta charset="utf-8" viewport="auto">    
+        <meta charset="utf-8">
+        <title>leticia-cs</title>
     </head>
-    
     <body>
         <header>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre-mim">Sobre Mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-
+            <img src="#" alt="logo leticia-cs">
+            <nav>
+                <a href="#secao-home">HOME</a>
+                <a href="#secao-projetos">PROJETOS</a>
+                <a href="#secao-sobre">SOBRE MIM</a>
+                <a href="#secao-contato">CONTATO</a>
+            </nav>
         </header>
-        <!-- Seção Home-->
-        <section class="home">
-            <h1 class="nome">leticia-cs</h1>
-            <h2 class="sub-nome">Desenvolvimento front-end</h2>
+
+        <!--Seção Home-->
+        <section class="secao" id="secao-home">
+            <h1 class="titulo-home">Letícia Souza</h1>
+            <h2 class="subtitulo-home">DESENVOLVIMENTO FRONT-END</h2>
+            <p>Formação em design e paixão por programação. Tem coisa melhor?</p>
+            <button class="cta home">CONHEÇA MEU TRABALHO</button>
+            <img src="#" alt="imagem home">
         </section>
-        <!-- Seção Sobre mim-->
-       <section class="sobre-mim">
-            <h1 class="ab-titulo">Nome? Letícia. Design por paixão, dessenvolvimento front-end... por paixão também. </h1>
-            <p class="ab-texto"> Passei meus últimos quatro anos estudando Design Digital na universidade. Foram muitos projetos diferentes até encontrar essa área que une design com programação.</p>
-       </section>
-        <!-- Seção Habilidades-->
-       <section class="habilidades">
-           <!-- Front Habilidades-->
-            <div class="hab-front">
-                <h1 class="hab-titulo">Front-End</h1>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+
+        <!--Seção Projetos-->
+        <section class="secao" id="secao-projetos">
+            <h1>MEUS PROJETOS</h1>
+            <div> <!--elemento (box) das imagens-->
+                <figure> <!--Imagem principal, é a maior-->
+                    <img src="#" alt="projeto1">
+                    <figcaption>Nome Projeto 1</figcaption>
+                </figure>
+                <div> <!--Imagens secundárias, coluna dir.-->
+                    <figure>
+                        <img src="#" alt="projeto2">
+                        <figcaption>Nome Projeto 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="#" alt="projeto3">
+                        <figcaption>Nome Projeto 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="#" alt="projeto1">
+                        <figcaption>Nome Projeto 4</figcaption>
+                    </figure>
+                </div>
             </div>
-           <!-- Codigo Habilidades-->
-            <div class="hab-codigo">
-                <h1 class="hab-titulo">Código</h1>
-                <li>GitHub</li>
-                <li>Visual Studio Code</li>
-                <li>Python</li>
+        </section>
+
+        <!--Seção Sobre Mim pt.1-->
+        <section class="secao" id="secao-sobre1">
+            <h1>SOBRE MIM</h1>
+            <ul>
+                <li><b>Design Digital, PUC-Campinas</b> <br> jan.2020 - dez.2023</li>
+                <li><b>Estágio em Design, Trim Conteúdo</b> <br> mai.2022 - presente</li>
+            </ul>
+            <div class="card" id="meu-perfil">
+                <img src="#" alt="img-perfil">
+                <h1>Letícia C. Souza</h1>
+                <h2>DESENVOLVIMENTO FRONT-END</h2>
+                <div> <!--Grupo de imagens/icones perfil centro-inf.-->
+                    <img src="#" alt="icone perfil 1">
+                    <img src="#" alt="icone perfil 2">
+                    <img src="#" alt="icone perfil 3">
+                </div>            
             </div>
-           <!-- Design Habilidades-->
-            <div class="hab-design">
-                <h1 class="hab-titulo">Design</h1>
-                <li>Figma</li>
-                <li>Canva</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe XD</li>
-                <li>Adobe Photoshop</li>
+        </section>
+        <section class="secao" id="secao-sobre2">
+            <h1>CONTE COMIGO PARA</h1>
+            <div> <!--Grupo dos cards-->
+                <!--Card prototipação-->
+                <div class="card" id="card-prototipacao">
+                    <img src="#" alt="icone-prototipacao">
+                    <h2>PROTOTIPAÇÃO</h2>
+                    <p>Baixa ou alta fidelidade, para o dispositivo que precisar.</p>
+                </div>
+                <!--Card construção-->
+                <div class="card" id="card-construcao">
+                    <img src="#" alt="icone-construcao">
+                    <h2>CONSTRUÇÃO</h2>
+                    <p>HTML, CSS, JavaScrip. Prefere algum framework?</p>
+                </div>
             </div>
-           <!-- Equipe Habilidades-->
-            <div class="hab-equipe">
-                <h1 class="hab-titulo">Equipe</h1>
-                <li>Microsoft Teams</li>
-                <li>Trello</li>
-                <li>Google Drive</li>
-                <li>Google Docs</li>
-                <li>Google Slides</li>
+        </section>
+        <!--Seção contato-->
+        <section class="secao" id="secao-contato">
+            <h1>CONTATO</h1>
+            <div>
+                <h2>Me siga mais de perto!</h2>
+                <ul>
+                    <li>
+                        <img src="#" alt="icone LinkedIn">
+                        <a href="linkedin.com/leticiacs-design/">/leticiacs-design</a>
+                    </li>
+                    <li>
+                        <img src="#" alt="ícone Behance">
+                        <a href="behance.net/leticiacs-design/">/leticiacs-design</a>
+                    </li>
+                </ul>
             </div>
-       </section>
-       <section class="proj">
-           <!--Seção Projetos-->
-            <div class="proj1">
-                <h1 class="proj-title">Projeto 1</h1>
+            <!--Card para contato-->
+            <div class="card" id="card-contato">
+                <h2>Fale comigo</h2>
+                <form>
+                    <label for="form-email">Seu email</label>
+                    <input type="email" id="form-email" placeholder="Seu email">
+                    <br>
+                    <label for="form-nome">Seu nome</label>
+                    <input type="text" id="form-nome" placeholder="Seu nome">
+                    <select name="motivo">
+                        <option selected>Selecione um assunto</option>
+                        <option>Prototipação</option>
+                        <option>Construção</option>
+                        <option>Outro</option>
+                    </select>
+                    <label for="form-texto">Corpo do Texto</label>
+                    <input type="text" id="form-texto" placeholder="Corpo do texto"> <br>
+                    <button class="cta formulario">Enviar</button>
+                </form>
             </div>
-            <div class="proj2">
-                <h1 class="proj-title">Projeto 2</h1>
+        </section>
+
+        <footer>
+            <!--Bloco Esquerda-->
+            <div class="footer" id="footer-esq">
+                <img src="#" alt="leticia-cs logo">
+                <p>leticiacsouza@yahoo.com</p>
             </div>
-            <div class="proj3">
-                <h1 class="proj-title">Projeto 3</h1>
+            <!--Bloco Centro-->
+            <div class="footer" id="footer-centro">
+                <a href="#secao-home">HOME</a>
+                <a href="secao-projetos">PROJETOS</a>
+                <a href="secao-sobre">SOBRE MIM</a>
+                <a href="secao-contato">CONTATO</a>
             </div>
-            <div class="proj4">
-                <h1 class="proj-title">Projeto 4</h1>
-            </div>
-            <div class="proj5">
-                <h1 class="proj-title">Projeto 5</h1>
-            </div>
-            <div class="proj6">
-                <h1 class="proj-title">Projeto 6</h1>
-            </div>
-       </section>
-       <footer>
-        <p class="footer-texto">Site criado por leticia-cs</p>
-        <p class="footer-texto">(c) 2022</p>
+            <p>&copy;2022, leticia-cs</p>
         </footer>
     </body>
 </html>
